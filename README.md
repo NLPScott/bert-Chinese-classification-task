@@ -35,7 +35,7 @@ python run_classifier_word.py \
   
   中文分类任务实践
 
-实验中对中文34个topic进行实践（包括：时政，娱乐，体育等），在对run_classifier.py代码中的预处理环节需要加入NewsProcessor模块，及类似于MrpcProcessor，但是需要对中文的编码进行适当修改，以及csv.reader对于文本长度的限制，可以改为字节流入读即可，训练数据与测试数据按照4:1进行切割，数据量约80万，单卡GPU资源，训练时间18小时，acc为92.8%，欢迎感兴趣的条友来撩
+实验中对中文34个topic进行实践（包括：时政，娱乐，体育等），在对run_classifier.py代码中的预处理环节需要加入NewsProcessor模块，及类似于MrpcProcessor，但是需要对中文的编码进行适当修改，训练数据与测试数据按照4:1进行切割，数据量约80万，单卡GPU资源，训练时间18小时，acc为92.8%
 
 eval_accuracy = 0.9281581998809113
 
