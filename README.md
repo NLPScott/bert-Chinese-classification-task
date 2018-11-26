@@ -12,7 +12,7 @@ bert中文分类实践
 
 export GLUE_DIR=/search/odin/bert/extract_code/glue_data \
 export BERT_BASE_DIR=/search/odin/bert/chinese_L-12_H-768_A-12/ \
-export BERT_PYTORCH_DIR=/search/odin/bert/chinese_L-12_H-768_A-12/ \
+export BERT_PYTORCH_DIR=/search/odin/bert/chinese_L-12_H-768_A-12/
 
 python run_classifier_word.py \
   --task_name NEWS \
