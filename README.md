@@ -1,18 +1,18 @@
 # bert-Chinese-classification-task
-bert中文分类实践
+bert中文分类实践\
 
-在run_classifier_word.py中添加NewsProcessor，即新闻的预处理读入部分
-在main方法中添加news类型数据处理label 
- processors = {
-        "cola": ColaProcessor,
-        "mnli": MnliProcessor,
-        "mrpc": MrpcProcessor,
-        "news": NewsProcessor,
-    }
+在run_classifier_word.py中添加NewsProcessor，即新闻的预处理读入部分 \
+在main方法中添加news类型数据处理label \
+ processors = { \
+        "cola": ColaProcessor,\
+        "mnli": MnliProcessor,\
+        "mrpc": MrpcProcessor,\
+        "news": NewsProcessor,\
+    }\
 
-export GLUE_DIR=/search/odin/bert/extract_code/glue_data
-export BERT_BASE_DIR=/search/odin/bert/chinese_L-12_H-768_A-12/
-export BERT_PYTORCH_DIR=/search/odin/bert/chinese_L-12_H-768_A-12/
+export GLUE_DIR=/search/odin/bert/extract_code/glue_data \
+export BERT_BASE_DIR=/search/odin/bert/chinese_L-12_H-768_A-12/ \
+export BERT_PYTORCH_DIR=/search/odin/bert/chinese_L-12_H-768_A-12/ \
 
 python run_classifier_word.py \
   --task_name NEWS \
