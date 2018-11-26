@@ -9,6 +9,10 @@ bert中文分类实践
         "mrpc": MrpcProcessor,\
         "news": NewsProcessor,\
     }
+    
+download_glue_data.py 提供glue_data下面其他的bert论文公测glue数据下载
+
+data目录下是news数据的样例
 
 export GLUE_DIR=/search/odin/bert/extract_code/glue_data \
 export BERT_BASE_DIR=/search/odin/bert/chinese_L-12_H-768_A-12/ \
